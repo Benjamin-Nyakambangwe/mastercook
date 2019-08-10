@@ -1,0 +1,456 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+   <title>Master Cook</title>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" type="text/css" href="style.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Poppins|Bitter|Gabriela|Libre+Baskerville" rel="stylesheet">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link href="carousel.css" rel="stylesheet">
+
+
+    <script type="text/javascript">
+
+      var i = 0; //start point
+      var images = [];
+      var time = 5000;
+
+      //image lists
+      images[0] = './img/carrots-food-fresh-616404.jpg';
+      images[1] = './img/vegan_pizza.jpg';
+      images[2] = './img/showcase.jpg';
+      
+     
+      
+
+      //Change image
+      function changeImg() {
+        document.slide.src = images[i];
+
+        if (i < images.length - 1) {
+          i++;
+        } else {
+          i = 0;
+        }
+
+        setTimeout("changeImg()", time);
+      }
+
+      window.onload = changeImg;
+
+
+    </script>
+</head>
+<body>
+<div class="header ">
+  <div class="row">
+  <div class="col-md-3">
+    <div>
+      <header><h1>MASTER COOK</h1></header>
+    </div>
+  </div>
+  <div class="col-md-6">
+    
+      <div  class=" nav">
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="recipes.html">RECIPES</a></li>
+            <li><a href="blog.html">BLOG</a></li>
+            <li><a href="restaurants.html">RESTAURANTS</a></li>
+            <li><a href="tips.html">TIPS</a></li>
+          </ul>
+      </div>
+    
+  </div>
+  <div class="col-md-3">
+      <div class="icons">
+
+          <a href="#"><img src="./img/icons/iconfinder_instagram_2119361.svg" alt="" width="50px" height="50px"></a>
+          <a href="#"><img src="./img/icons/iconfinder_skype_2119363.svg" alt="" width="50px" height="50px"></a>
+          <a href="#"><img src="./img/icons/iconfinder_twitter_2119367.svg" alt="" width="50px" height="50px"></a>
+          <a href="#"><img src="./img/icons/iconfinder_youtube_2119371.svg" alt="" width="50px" height="50px"></a>
+          
+        
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <div class="my_showacase">
+    <div class="row">
+      <div class="col-md-8">
+        <div class="showcase_slider">
+            <img src="" alt="" name="slide" width="100%" height="580px">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="daily_pop">
+            <div id="showcaseCorner" >
+                <div>
+                  <h1 class="text-center">RECIPE OF THE DAY</h1>
+                </div>
+                <h2 class="text-center">Pasto Pizza With Extra Topings</h2>
+                <div class="dividing_border"></div>
+                <h4 class="text-center"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. </small></h4>
+                <button class="container btn form-control text-center">VIEW</button>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="search_bar">
+      <form class="form-group">
+          <input type="text" name="text" placeholder="email" class="form-control">
+          <button type="submit" class="btn form-control">SEARCH</button>
+        </form>
+
+  </div>
+
+<div class="body_2" ><!--below showcase aka grey_area-->
+
+
+
+<div class="container">
+  <h2 >RECENT RECIPES</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/eggs.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Curry Deviled Egg Salad</strong></p>
+  <a href="groundBeefRecipe.html" class="container btn form-control text-center">VIEW</a>
+</div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="box">
+          <img src="./img/eggs.jpeg" width="100%" height="230px">
+          <p class="text-center"><strong>Curry Deviled Egg Salad</strong></p>
+          <a href="groundBeefRecipe.html" class="container btn form-control text-center">VIEW</a>
+        </div>
+            </div>
+ 
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/burgernfrys.jpeg" alt="Salad" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/niceBig.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+  </div>
+</div><!--end of recent recipes-->
+
+
+<div class="container"><!--begin of vegan-->
+  <h2 >VEGAN RECIPES</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/vegan_pizza.jpg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/veganBurger.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/foodSalad.jpg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="box">
+          <img src="./img/vegan_pizza.jpg" width="100%" height="230px">
+          <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+          <button class="container btn form-control text-center">VIEW</button>
+        </div>
+            </div>
+  </div>
+</div><!--end of vegan recipes-->
+
+<div class="container"><!--begin of baking-->
+  <h2 >BAKING RECIPES</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/nice_pie.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/pink_cake.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/pie.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+    <div class="col-md-3">
+        <div class="box">
+          <img src="./img/pie.jpeg" width="100%" height="230px">
+          <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </strong></p>
+          <button class="container btn form-control text-center">VIEW</button>
+        </div>
+            </div>
+  </div>
+</div><!--end of baking recipes-->
+
+
+<div class="container"><!--begin og best of the month-->
+  <h2 >BEST OF THE MONTH</h2>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/nice_food.png" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/steak.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="stir_fry.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="box">
+          <img src="./img/steak.jpeg" width="100%" height="230px">
+          <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+          <button class="container btn form-control text-center">VIEW</button>
+        </div>
+            </div>
+  </div>
+</div><!--end of best of the MONTH_1 recipes-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/taco.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/eggs.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+<div class="box">
+  <img src="./img/pexels.jpeg" width="100%" height="230px">
+  <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </strong></p>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="box">
+          <img src="./img/pexels.jpeg" width="100%" height="230px">
+          <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed </strong></p>
+          <button class="container btn form-control text-center">VIEW</button>
+        </div>
+            </div>
+  </div>
+</div><!--end of best of the MONTH_2 recipes-->
+
+
+<div class="dividing_border "></div>
+<!--border dividing recipes and blog--> 
+
+<div class="blogPart">
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+  <article>
+    <h2>TOPICS</h2>
+    <div class="sub_blog">
+       <h3 class="text-center">Making the best out of your Kitchen</h3>
+      <img src="./img/kitchen.jpeg" class="img-fluid">
+      <div class="passage"> 
+      <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+    </div>
+      <a href="#" class="container btn form-control text-center">READ MORE</a>
+    </div>
+
+    <div class="sub_blog">
+      <h3 class="text-center">How to become a MasterChef</h3>
+      <img src="./img/chef.jpeg" class="img-fluid">
+      <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+      <a href="#" class="container btn form-control text-center">READ MORE</a>
+    </div>
+
+    <div class="sub_blog">
+      <h3 class="text-center">Increase the appetite of your kids and also have fun while doing it</h3>
+      <img src="./img/mom_cook.jpeg" class="img-fluid">
+      <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+      <a href="#" class="container btn form-control text-center">READ MORE</a>
+    </div>
+
+    <div class="sub_blog">
+      <h3 class="text-center">The art of cleaning a dirty kitchen</h3>
+      <img src="./img/pots.jpeg" class="img-fluid">
+      <p class="text-center"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</strong></p>
+      <a href="#" class="container btn form-control text-center">READ MORE</a>
+    </div>
+  </article>
+</div><!-- first col div-->
+
+<div class="col-md-4">
+<div class="whiteFill">
+<div id="newsletter"><!--begin of aside newsletter-->
+  <h1 class="text-center">Master Cook</h1>
+  <h2 class="text-center">SIGN UP TODAY !</h2>
+  <h4 class="text-center">Get the latest recipes, tips, news and updates in your inbox!</h4>
+  <form class="form-group">
+    <input type="email" name="email" placeholder="email" class="form-control">
+    <button type="submit" class="btn form-control">SUBMIT</button>
+  </form>
+</div>
+</div><!--whiteFill end div-->
+
+<div id="showcaseCorner" >
+  <div>
+    <h1 class="text-center">RECIPE OF THE DAY</h1>
+  </div>
+  <h2 class="text-center">Pasto Pizza With Extra Topings</h2>
+  <div class="dividing_border"></div>
+  <h4 class="text-center"><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+  tempor incididunt ut labore et dolore magna aliqua. </small></h4>
+  <button class="container btn form-control text-center">VIEW</button>
+</div>
+
+
+</div><!-- last col div -->
+</div><!-- row div-->
+</div><!-- bootstrap article container div-->
+
+
+
+</div>
+
+<div class="dividing_border "></div>
+<!--border dividing recipes and blog--> 
+
+</div><!--end of bottom slider div-->
+
+<footer>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4">
+  <div>
+  <ul>
+    <li><a href="#"><strong>HOME</strong></a></li>
+    <li><a href="#"><strong>ABOUT US</strong></a></li>
+    <li><a href="#"><strong>CONTACT US</strong></a></li>
+    <li><a href="#"><strong>FAQ</strong></a></li>
+  </ul>
+  </div>
+    </div>
+
+    <div class="col-md-4">
+  <div></div>
+    </div>
+
+    <div class="col-md-4">
+  <div>
+    <ul>
+      <li><a href="#"><strong>instagram</strong></a></li>
+      <li><a href="#"><strong>facebook</strong></a></li>
+      <li><a href="#"><strong>linkedin</strong></a></li>
+      <li><a href="#"><strong>twitter</strong></a></li>
+    </ul>
+  </div>
+    </div>
+  </div><!--footer row-->
+</div><!--footer container-->
+
+<div class="container">
+  <p class="text-center"><strong>MasterCook &copy2018</strong></p>
+</div>
+</footer>
+  
+</div><!--end of grey area-->
+
+<div><a href="#">BACK TO TOP</a></div>
+<script src="main.js"></script>
+ </body>
+ </html>
